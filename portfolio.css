@@ -4,6 +4,10 @@
 	 font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
 }
+body{
+	background: #1d1f2c;
+}
+
 span{
 	color: #fa6c41;
 	font-weight: bold;
@@ -14,9 +18,9 @@ span{
 nav{
 	background: #1d1f2c;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding: 20px 20px;
+	padding: 20px 100px;
 
 }
 nav h2 > a{
@@ -65,13 +69,14 @@ nav li > a{
 header > section:nth-of-type(1) > div{
 	background: #0E1016;
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0px;
+	padding: 20px 100px;
 }
-header > section h1{
+header > section > div > div > h2:nth-of-type(1){
 	padding: 30px 0px 2px;
-	font-size: 3.3em;
+	font-size: 4em;
 	color: #fff;
 
 }
@@ -130,11 +135,15 @@ header > section > div > div > h3{
 
 main > section:nth-of-type(1){
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-around;
-	padding: 100px 20px;
+	justify-content: space-between;
+	padding: 100px 100px 0px;
 	 background: #1d1f2c ;
 	 color: #fff;
+}
+main > section:nth-of-type(1) > div{
+	margin-bottom: 150px;
 }
  main > section:nth-of-type(1) > div > h4{
  	font-weight: bold;
@@ -167,30 +176,34 @@ main  > section:nth-of-type(1) > div > p{
   	margin-right: 10px;
   }
    .main-picture{
-   	width: 400px;
-   	height: 400px;
+   	width: 380px;
+   	height: 380px;
    	background: #fd4759;
    	border: 15px solid #fd4759;
     position: relative;
     align-self: end;
+    z-index: 2;
    }
-  .main-picture::before{
-  	content: url('images/bluelady2.jpg');
-  	position:absolute ;
-  	top: -100px;
-  	right: -15px;
-  	z-index: 1;
-  }  
-  .main-picture::after{
-  	content: '';
-  	position: absolute;
-  	width: 100px;
-  	height: 100px;
-  	border: #fd4759 20px solid;
-  	border-radius: 50%;
-  	top:-170px ;
-  	right:-70px ;
-  }
+   .main-picture > img{
+   	width: 400px;
+   	height: 400px;
+   	position: absolute;
+   	top: -60px;
+   	left: -35px;
+   	 z-index: 2;
+   }
+   .main-picture > div{
+   	width: 100px;
+   	height: 100px;
+   	border-radius: 50%;
+   	border: 10px solid #fd4759 ;
+   	background:#1d1f2c ;
+   	position: absolute;
+   	top: -100px ;
+   	right:-50px ;
+   	z-index: 1;
+   }
+   
   /*MAIN-SECTION 2*/
 
   main > section:nth-of-type(2){
@@ -198,11 +211,11 @@ main  > section:nth-of-type(1) > div > p{
   	padding: 50px 20px;
   }
   main >section:nth-of-type(2) > div{
-  	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr;
+  	display: flex;
+  	flex-wrap: wrap;
 	align-items: center;
-	justify-items: space-evenly;
-	grid-gap: 30px;
+	justify-items: space-between;
+	gap: 30px;
 	color: #fff;
 	padding: 0px 50px;
 	
@@ -210,6 +223,7 @@ main  > section:nth-of-type(1) > div > p{
  main >section:nth-of-type(2) > div > div{
  	display: flex;
  	flex-direction: column;
+ 	flex: 1;
  	align-items: center;
  	justify-content: center;
  	width: 350px;
@@ -267,6 +281,7 @@ main  > section:nth-of-type(1) > div > p{
  }
  main > section:nth-of-type(3) > div > ul{
  	display: flex;
+ 	flex-wrap: wrap;
  	justify-content: center;
  	align-items: center;
  	gap: 20px;
@@ -278,15 +293,17 @@ main  > section:nth-of-type(1) > div > p{
   	font-weight: bold;
   }
   main > section:nth-of-type(3) > div+div{
-  	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr 1fr;
-  	padding: 50px 200px;
-  	grid-row-gap: 30px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 50px 10px;
+  	gap: 30px;
 
   }
   main > section:nth-of-type(3) > div+div > img{
-  	width: 200px;
-  	height: 200px;
+  	width: 150px;
+  	height: 150px;
   }
 
   /*MAIN-SECTION 4*/
@@ -360,8 +377,9 @@ main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2){
 	color: #0E1016;
 	border-radius: 4px;	 
 	padding: 3px;
+	max-height: 250px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 8px;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2) > span{
 	font-size: 1.8em;
@@ -398,15 +416,16 @@ main > section:nth-of-type(6) > h2, p{
 	margin-bottom: 20px;
 } 
 main > section:nth-of-type(6) > div{
-	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr;
+	display:flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-items: center;
-	grid-gap: 30px;
-	padding: 0px 70px;
+	justify-items: space-between;
+	gap: 30px;
+	padding: 0px 10px;
 }
 main > section:nth-of-type(6) > div > div{
 	display: flex;
+	flex: 1;
  	flex-direction: column;
  	align-items: center;
  	justify-content: center;
@@ -463,3 +482,78 @@ main >section:nth-of-type(6) > div > div:nth-child(2){
    	border-radius: 50%;
    	border: 3px solid #FB604A;
    }
+@media screen and (max-width: 414px){
+	nav ul{
+		display: none;
+	}
+	 nav h2{
+	 	font-size: 1em;
+	 }
+	header > section{
+		padding: 0px 0px;
+	}
+	header > section > div > div > h2:nth-of-type(1){
+		font-size: 1.5em;
+	}
+	 header > section > div > div > h2:nth-of-type(2){
+	font-size: 0.5em;
+	margin-bottom: 15px;
+	}
+	header > section:nth-of-type(1) > div{
+		padding: 10px 20px;
+	}
+	header > section > div > div > p{
+		font-size:0.8em;
+		max-width: 200px;
+		padding-bottom: 0px;
+		margin-bottom: 20px;
+	}
+	header > section > div > div > div{
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+	}
+	main > section:nth-of-type(1){
+		padding: 20px 20px;
+
+	}
+	main  > section:nth-of-type(1) > div > h2{
+		padding-bottom: 0px;
+	}
+	main  > section:nth-of-type(1) > div > p{
+		font-size: 0.6em;
+		max-width: 300px;
+		padding-top: 0px;
+	}
+	}
+   .main-picture{
+   	width: 280px;
+   	height: 280px;
+   	background: #fd4759;
+   	border: 15px solid #fd4759;
+    position: relative;
+    align-self: end;
+    z-index: 2;
+    margin-left: 20px;
+   }
+   .main-picture > img{
+   	width: 300px;
+   	height: 300px;
+   	position: absolute;
+   	top: -60px;
+   	left: -35px;
+   	 z-index: 2;
+   }
+   .main-picture > div{
+   	width: 50px;
+   	height: 50px;
+   	border-radius: 50%;
+   	border: 5px solid #fd4759 ;
+   	background:#1d1f2c ;
+   	position: absolute;
+   	top: -80px ;
+   	right:-35px ;
+   	z-index: 1;
+   }
+}
+	
