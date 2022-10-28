@@ -116,7 +116,7 @@ header > section:nth-of-type(1) > div > div > div > a {
 header > section:nth-of-type(1) > div > div > div > a:hover{
 	background: #fff;
 	color: #fa6c41;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 header > section > div > div > div > p{
 	color: #fff;
