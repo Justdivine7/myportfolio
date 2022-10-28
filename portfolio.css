@@ -23,12 +23,12 @@ nav{
 	padding: 20px 100px;
 
 }
+ 
 nav h2 > a{
 	margin-left: 0px;
 	font-size: 2.7em;
 	font-weight: bold;
-	color: #0E1016;
-
+	color: #fff;
 	position: relative;
 	text-decoration: none;
 	letter-spacing: 2px;
@@ -51,7 +51,7 @@ nav > ul{
  	display: flex;
  	align-items: center;
  	justify-content: center;
- 	gap: 70px;
+ 	gap: 40px;
  	
 }
 nav li{
@@ -90,7 +90,7 @@ header > section > div > div > p {
 	width: 500px;
 	color: #fff;
 	line-height: 1.5em;
-	padding-bottom: 30px;
+	/*padding-bottom: 30px;*/
 	font-size: 1.3em;
 	text-align: left;
 }
@@ -100,16 +100,23 @@ header > section > div > div > div{
 	padding-bottom: 100px;
 	cursor: pointer;
 
+
 }
 header > section:nth-of-type(1) > div > div > div > a {
 	color: #fff;
   	text-decoration: none;
-	border-radius: 4px;
+	border-radius: 10px;
 	border:#fa6c41 2px solid ;
 	text-align: center;
 	width: 100px;
 	height: 35px;
+	padding-top: 5px;
 
+}
+header > section:nth-of-type(1) > div > div > div > a:hover{
+	background: #fff;
+	color: #fa6c41;
+	font-size: 1.1em;
 }
 header > section > div > div > div > p{
 	color: #fff;
@@ -156,6 +163,7 @@ main > section:nth-of-type(1) > div{
  }
 main  > section:nth-of-type(1) > div > p{
 	line-height: 2em;
+	margin-top: 20px;
 	padding: 20px 0px;
 	 text-align: left;
 }
@@ -166,10 +174,14 @@ main  > section:nth-of-type(1) > div > p{
   main > section:nth-of-type(1) > div > a{
   	 color: #fff;
   	text-decoration: none;
-	border-radius: 4px;
+	border-radius: 8px;
 	border:#fa6c41 2px solid ;
 	padding: 5px 10px;
 
+  }
+  main > section:nth-of-type(1) > div > a:hover{
+  	background: #fff;
+  	color: #fa6c44;
   }
   main > section > div > a:nth-of-type(1){
   	background:radial-gradient(#fd4759, #fa6c44) ;
@@ -185,7 +197,7 @@ main  > section:nth-of-type(1) > div > p{
     z-index: 2;
    }
    .main-picture > img{
-   	width: 400px;
+   	width: 380px;
    	height: 400px;
    	position: absolute;
    	top: -60px;
@@ -213,25 +225,27 @@ main  > section:nth-of-type(1) > div > p{
   main >section:nth-of-type(2) > div{
   	display: flex;
   	flex-wrap: wrap;
-	align-items: center;
-	justify-items: space-between;
-	gap: 30px;
-	color: #fff;
-	padding: 0px 10px;
+		align-items: center;
+		justify-items: space-between;
+		gap: 30px;
+		color: #fff;
+		padding: 0px 10px;
 	
   }
  main >section:nth-of-type(2) > div > div{
- 	display: flex;
- 	flex-direction: column;
- 	flex: 1;
- 	align-items: center;
- 	justify-content: center;
- 	width: 350px;
- 	 padding: 10px 0px;
- 	 gap: 5px;
+ 		display: flex;
+ 		flex-direction: column;
+ 		flex: 1;
+ 		align-items: center;
+ 		justify-content: center;
+ 		width: 350px;
+ 	 	padding: 10px 0px;
+ 		gap: 5px;
+ 		transition: 0.5s;
  } 
- main >section:nth-of-type(2) > div > div:nth-child(2){
- 	border: 3px  #FB604A  solid;
+ main >section:nth-of-type(2) > div > div:hover{
+ 		border: 3px  #FB604A  solid;
+ 		box-shadow: 0px 0px 8px #fff;
  }
   main > section:nth-of-type(2) > h2{
   	text-align: center;
@@ -252,40 +266,40 @@ main  > section:nth-of-type(1) > div > p{
   	 filter:invert(100%) sepia(98%) saturate(0%) hue-rotate(345deg) brightness(103%) contrast(102%) ;
   }
  main > section:nth-of-type(2) > div p{
- 	width: 300px;
- 	font-size: 15px;
- 	text-align: center;
- 	line-height: 1.5em;
+ 		width: 300px;
+	 	font-size: 15px;
+ 		text-align: center;
+ 		line-height: 1.5em;
  }
  /*MAIN-SECTION 3*/
  main >section:nth-of-type(3){
- 	background: #1d1f2c;
- 	color: #fff;
- 	padding: 50px 20px;
+	 	background: #1d1f2c;
+	 	color: #fff;
+	 	padding: 50px 20px;	
  }
  main > section:nth-of-type(3) > h2{
- 	text-align: center;
+ 		text-align: center;
  }
  main > section:nth-of-type(3) > p{
- 	text-align: center;
+ 		text-align: center;
  }
  main > section:nth-of-type(3) > h2{
- 	font-size: 2.5em;
+ 		font-size: 2.5em;
   	color: #fff;
   	padding: 25px 0px;
  }
  main > section:nth-of-type(3) > p{
- 	color: #fff;
+ 		color: #fff;
   	padding: 25px 0px;
   	font-size: 1.3em;
  }
  main > section:nth-of-type(3) > div > ul{
- 	display: flex;
- 	flex-wrap: wrap;
- 	justify-content: center;
- 	align-items: center;
- 	gap: 20px;
- 	padding: 20px 0px;
+	 	display: flex;
+	 	flex-wrap: wrap;
+	 	justify-content: center;
+	 	align-items: center;
+	 	gap: 20px;
+	 	padding: 20px 0px;
  }
   main > section:nth-of-type(3) > div > ul > li{
   	list-style-type: none;
@@ -321,8 +335,8 @@ main  > section:nth-of-type(1) > div > p{
   	padding: 0px 40px;
   }
  main > section:nth-of-type(4) > div > h4 > span{
- 	color: #fff;
- 	font-size: 1.3em;
+	 	color: #fff;
+	 	font-size: 1.3em;
  } 
   main > section:nth-of-type(4) > div > a{
   	padding:  5px 10px;
@@ -337,58 +351,58 @@ main  > section:nth-of-type(1) > div > p{
 
 main > section:nth-of-type(5){
 	  background: #0E1016 ;
-	padding: 20px 50px;
-	color: #fff;
+		padding: 20px 50px;
+		color: #fff;
 }
 main > section:nth-of-type(5) > div > h2{
-	text-align: center;
+		text-align: center;
 }
 main > section:nth-of-type(5) > div > p{
-	text-align: center;
+		text-align: center;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div{
-	display: flex;
-	align-items: center;
-	justify-content: start;
+		display: flex;
+		align-items: center;
+		justify-content: start;
 	 gap: 50px;
 	 padding: 10px 30px 20px ;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(2){
-	flex-direction:row-reverse;
-	justify-content: end;
+		flex-direction:row-reverse;
+		justify-content: end;
 }
  
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div > img{
-	width: 100px;
-	height: 100px;
-	border-radius: 5px;
-	border: 3px solid #FB604A;
+		width: 100px;
+		height: 100px;
+		border-radius: 5px;
+		border: 3px solid #FB604A;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2){
-	width: 500px;
-	background:#E7E5E0 ;
-	color: #0E1016;
-	border-radius: 4px;	 
-	padding: 3px;
-	max-height: 250px;
-	text-align: center;
-	font-size: 8px;
+		max-width: 400px;
+		background:#E7E5E0 ;
+		color: #0E1016;
+		border-radius: 4px;	 
+		padding: 3px;
+		max-height: 250px;
+		text-align: center;
+		font-size: 12px;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2) > span{
-	font-size: 1.8em;
+		font-size: 1.8em;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1){
-	color: chocolate;
+		color: chocolate;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2){
-	font-size: 12px;
+		font-size: 12px;
 }
 /*main > section:nth-of-type(5) > div:nth-of-type(2) > div > div > div:nth-of-type(1){
 
@@ -432,13 +446,16 @@ main > section:nth-of-type(6) > div > div{
  	width: 350px;
  	 padding: 30px 0px;
  	 gap: 20px;
+ 	 transition: 0.5s;
+}
+main > section:nth-of-type(6) > div > div:hover{
+	border: 3px  #FB604A solid;
+	box-shadow: 0px 0px 8px #fff;
 }
 main > section:nth-of-type(6) > div > div > p{
 	width: 250px;
 }
-main >section:nth-of-type(6) > div > div:nth-child(2){
- 	border: 3px  #FB604A solid;
-}
+ 
 
  /*FOOTER*/
 
@@ -484,8 +501,14 @@ footer > div > div:nth-of-type(2){
    	height: 30px;
    	border-radius: 50%;
    	border: 3px solid #FB604A;
+   	transition: 0.3s;
    }
-@media screen and (max-width: 414px){
+   footer > div > div > div:hover{
+   	transform: translateY(-5px);
+   	border: 3px solid #fff;
+   }
+
+@media screen and (max-width: 320px),(max-width: 360px), (max-width: 414px), (max-width: 820px){
 	nav ul{
 		display: none;
 	}
@@ -494,9 +517,10 @@ footer > div > div:nth-of-type(2){
 	 }
 	header > section{
 		padding: 0px 0px;
+		
 	}
 	header > section > div > div > h2:nth-of-type(1){
-		font-size: 1.5em;
+		font-size: 1.7em;
 	}
 	 header > section > div > div > h2:nth-of-type(2){
 	font-size: 0.5em;
@@ -506,15 +530,17 @@ footer > div > div:nth-of-type(2){
 		padding: 10px 20px;
 	}
 	header > section > div > div > p{
-		font-size:0.8em;
+		font-size:1em;
 		max-width: 200px;
 		padding-bottom: 0px;
 		margin-bottom: 20px;
 	}
+
 	header > section > div > div > div{
 		flex-direction: column;
 		align-items: start;
 		justify-content: center;
+		margin-top: 40px;
 	}
 	main > section:nth-of-type(1){
 		padding: 20px 20px;
@@ -524,14 +550,15 @@ footer > div > div:nth-of-type(2){
 		padding-bottom: 0px;
 	}
 	main  > section:nth-of-type(1) > div > p{
-		font-size: 0.6em;
+		font-size: 1em;
 		max-width: 300px;
 		padding-top: 0px;
+		line-height: 1.3em;
 	}
-	}
+	
    .main-picture{
-   	width: 280px;
-   	height: 280px;
+   	width: 330px;
+   	height: 380px;
    	background: #fd4759;
    	border: 15px solid #fd4759;
     position: relative;
@@ -541,22 +568,34 @@ footer > div > div:nth-of-type(2){
    }
    .main-picture > img{
    	width: 300px;
-   	height: 300px;
+   	height: 400px;
    	position: absolute;
-   	top: -60px;
-   	left: -35px;
+   	top: -50px;
+   	left: -20px;
    	 z-index: 2;
    }
    .main-picture > div{
-   	width: 50px;
-   	height: 50px;
-   	border-radius: 50%;
-   	border: 5px solid #fd4759 ;
-   	background:#1d1f2c ;
-   	position: absolute;
-   	top: -80px ;
-   	right:-35px ;
-   	z-index: 1;
+   display: none;
    }
+   main > section:nth-of-type(3) > div+div > img{
+   	width: 200px;
+   	height: 200px;
+   }
+
+main > section:nth-of-type(5){
+	padding: 20px 30px;
 }
-	
+main > section:nth-of-type(5) > div:nth-of-type(2) > div{
+	padding: 10px 0px 20px;
+	gap: 10px;
+}
+  main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2){
+  	max-height: 200px;
+  	width: 190px;
+  	padding: 2px ;
+  	border-radius: 8px;
+  }
+
+}
+
+ 
