@@ -27,14 +27,14 @@ nav{
  
 nav h2 > a{
 	margin-left: 0px;
-	font-size: 2.7em;
+	font-size: 2.4em;
 	font-weight: bold;
-	color: #fff;
+	color: lightblue;
 	position: relative;
 	text-decoration: none;
 	letter-spacing: 2px;
-	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
-	animation: animate 2s linear infinite;
+	/*-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);*/
+	animation: animate 0.2s linear infinite;
 }
 @keyframes animate{
 	0%{
@@ -43,8 +43,8 @@ nav h2 > a{
 	}
 	100%{
 		color: #fff;
-		text-shadow: 0px 0px 10px #fa6c41,
-		0px 0px 20px #fa6c41;
+		text-shadow: 0px 0px 10px #fff,
+		0px 0px 20px #fff;
 		 
 	}
 }
@@ -64,6 +64,13 @@ nav li{
 nav li > a{
 	text-decoration: none;
 	color: #fff;
+	transition: 0.3s;
+}
+nav li > a:hover{
+	background: #fff;
+	color: #fa6c41;
+	border-radius: 5px;
+	padding: 4px;
 }
 /*HEADER SECTION*/
 
@@ -90,7 +97,7 @@ header > section > div > div > h2 > span{
 header > section > div > div > p {
 	width: 500px;
 	color: #fff;
-	line-height: 1.5em;
+	line-height: 2em;
 	/*padding-bottom: 30px;*/
 	font-size: 1.3em;
 	text-align: left;
@@ -100,8 +107,6 @@ header > section > div > div > div{
 	gap: 30px;
 	padding-bottom: 100px;
 	cursor: pointer;
-
-
 }
 header > section:nth-of-type(1) > div > div > div > a {
 	color: #fff;
@@ -112,6 +117,7 @@ header > section:nth-of-type(1) > div > div > div > a {
 	width: 100px;
 	height: 35px;
 	padding-top: 5px;
+	transition: 0.2s;
 
 }
 header > section:nth-of-type(1) > div > div > div > a:hover{
@@ -131,8 +137,14 @@ header > section > div > div > div > p > img {
 	height: 30px;
 	filter:invert(100%) sepia(98%) saturate(0%) hue-rotate(345deg) brightness(103%) contrast(102%) ;
 }
+.coder{
+	width: 300px;
+	height:300px ;
+	filter:invert(1);  
+	/*justify-self: flex-end;*/
+}
 header > section >div > div+div {
-	align-self: end;
+	justify-self: end;
 }
 header > section > div > div > h3{
 	font-size: 1.4em;
@@ -160,10 +172,10 @@ main > section:nth-of-type(1) > div{
  main  > section:nth-of-type(1) > div > h2{
  	font-size: 1.6em;
  	padding: 10px 0px;
- 	 
+ 	 line-height: 1.5em;
  }
 main  > section:nth-of-type(1) > div > p{
-	line-height: 2em;
+	line-height: 3em;
 	margin-top: 20px;
 	padding: 20px 0px;
 	 text-align: left;
@@ -178,6 +190,7 @@ main  > section:nth-of-type(1) > div > p{
 	border-radius: 8px;
 	border:#fa6c41 2px solid ;
 	padding: 5px 10px;
+	transition: 0.2s;
 
   }
   main > section:nth-of-type(1) > div > a:hover{
@@ -437,7 +450,7 @@ main > section:nth-of-type(6) > div > div{
 main > section:nth-of-type(6) > div > div:hover{
 	border: 3px  #FB604A solid;
 	box-shadow: 0px 0px 8px #fff;
-	
+	margin-left: 100px;
 }
 main > section:nth-of-type(6) > div > div > p{
 	width: 250px;
@@ -465,7 +478,10 @@ footer > div > div:nth-of-type(2){
  }
  footer > div:nth-of-type(2) > div > span{
  	color: #fff;
- 	font-size: 8px;
+ 	font-size: 7px;
+ 	font-family: arial;
+ 	font-weight: lighter;
+ 	line-height: 2em;
  }
  footer > div > div{
  	display: flex;
@@ -503,7 +519,7 @@ footer > div > div:nth-of-type(2){
 		display: none;
 	}
 	 nav h2{
-	 	font-size: 1em;
+	 	font-size: 0.8em;
 	 }
 	header > section{
 		padding: 0px 0px;
@@ -592,6 +608,9 @@ main > section:nth-of-type(5) > div:nth-of-type(2) > div{
 
 }
 @media only screen and (max-width: 320px), (max-width: 359px){
+	  nav h2{
+	 	font-size: 0.5em;
+	 }
 	 nav h2 > a{
 	 	margin-left: -20px;
 	 }
@@ -638,7 +657,7 @@ main > section:nth-of-type(5) > div:nth-of-type(2) > div{
    	margin-top: 20px;
    }
    main > section:nth-of-type(5) > div:nth-of-type(2) > div > div:nth-of-type(2){
-   	font-size: 10px;
+   	font-size: 8px;
    }
    main > section:nth-of-type(6) > h2, p{
    	font-size:12px ;
@@ -648,4 +667,12 @@ main > section:nth-of-type(5) > div:nth-of-type(2) > div{
    	padding: 3px 0px;
    	line-height: 1em;
    }
+    footer > div:nth-of-type(2) > div > span{
+    	font-size: 5px;
+    	text-align: center;
+    }
+    footer > div > div{
+    	/*height: 120px;*/
+    }
  }
+
